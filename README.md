@@ -1,3 +1,3 @@
-# Zoommm
+# Xoom
 
-Zoom Clone using NodeJS, WebRTC and Websockets.
+Zoom clone using NodeJS, WebRTC and Websockets.
