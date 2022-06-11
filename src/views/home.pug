@@ -10,8 +10,11 @@ html(lang="en")
         header
             h1 xoom 
         main
-            ul 
-            form
+            ul
+            form#nickname
+                input(type='text',placeholder='choose a nickname',required)
+                button Save
+            form#message
                 input(type='text',placeholder='write a message',required)
                 button Send
             h2 Welcome to xoom
