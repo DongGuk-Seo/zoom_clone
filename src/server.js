@@ -28,7 +28,7 @@ wss.on("connection", (socket) => {
             case "new_message":
                 sockets.forEach(aSocket => aSocket.send(`${socket.nickname}: ${message.payload}`));
             case "nickname":
-                socket["nickname"] == message.payload;
+                socket["nickname"] = message.payload;
         };
         console.log(message);
     });
