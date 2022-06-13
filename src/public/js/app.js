@@ -25,7 +25,10 @@ socket.addEventListener("close", () => {
 function handleSubmit(event) {
     event.preventDefault();
     const input = messageForm.querySelector("input");
+    const li = document.createElement("li");
     socket.send(makeMassage("new_message", input.value));
+    li.innerText = `You : ${input.value}`;
+    messageList.append(li);
     input.value = '';
 }
 
